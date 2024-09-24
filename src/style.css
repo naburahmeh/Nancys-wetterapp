@@ -39,10 +39,15 @@ form {
   padding: 9px;
   width: 15%;
   margin: 5px 3px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 header {
   border-bottom: 1px solid rgb(207, 207, 207);
   padding-bottom: 15px;
+}
+
+footer {
+  border-top: 1px solid rgb(207, 207, 207);
+  padding-top: 15px;
 }
