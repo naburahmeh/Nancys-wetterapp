@@ -23,24 +23,40 @@ form {
   text-align: center;
 }
 
+a {
+  color: #61605b;
+}
+
 header {
   border-bottom: 1px solid rgb(207, 207, 207);
   padding-bottom: 15px;
 }
 
 main {
-  padding: 30px;
+  padding: 20px 30px 30px 15px;
+  font-family: Helvetica, sans-serif;
 }
 
 footer {
   border-top: 1px solid rgb(207, 207, 207);
   padding-top: 15px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.currentCity {
+  font-size: 38px;
+  line-height: 20px;
 }
 
 .currentTemperature {
   font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+.currentData {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .search-form-input {
   width: 230px;
   border: none;
