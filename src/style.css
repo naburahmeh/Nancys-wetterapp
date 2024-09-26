@@ -44,9 +44,17 @@ footer {
   text-align: center;
 }
 
+strong {
+  color: brown;
+}
+.currentDetails {
+  color: #61605b;
+}
+
 .currentCity {
   font-size: 38px;
   line-height: 20px;
+  color: black;
 }
 
 .currentTemperature {
