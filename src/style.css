@@ -34,6 +34,7 @@ header {
 
 main {
   padding: 20px 30px 30px 15px;
+  margin-bottom: 30px;
   font-family: Helvetica, sans-serif;
 }
 
@@ -58,8 +59,15 @@ strong {
 }
 
 .currentTemperature {
-  font-size: 32px;
+  font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  color: black;
+}
+
+.tempSymbol {
+  margin-top: 20px;
 }
 
 .currentData {
@@ -87,4 +95,16 @@ strong {
 .weather-data {
   display: flex;
   justify-content: space-between;
+}
+
+.temperatureContainer {
+  display: flex;
+  margin-right: -290px;
+  margin-top: -100px;
+  justify-content: right;
+}
+
+.temperatureIcon {
+  font-size: 40px;
+  margin-top: 20px;
 }
