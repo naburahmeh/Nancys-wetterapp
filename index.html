@@ -10,11 +10,12 @@
     <div class="weather-app">
       <h1>Welcome to Nancy's Weather-App!</h1>
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter your city.."
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="search" class="search-button" />
         </form>
@@ -24,7 +25,7 @@
         <div class="weather-data">
           <div class="currentDetails">
           <p class="currentData">
-            <h2 class="currentCity">Vienna</h2>
+            <h2 class="currentCity" id="city">Vienna</h2>
             Sunday 16:41, cloudy
             <br />
             Humidity: <strong>57%</strong>, Wind: <strong>4,2km/h</strong> 
@@ -54,5 +55,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
