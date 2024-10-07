@@ -5,11 +5,11 @@ function updateTemperature(response) {
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
-  let currentDayElement = document.querySelector("#currentDay");
-  let date = new Date(response.data.time * 1000);
-  let timeElement = document.querySelector("#currentDay");
 
-  timeElement.innerHTML = formatDate;
+  let timeElement = document.querySelector("#currentDay");
+  let date = new Date(response.data.time * 1000);
+
+  timeElement.innerHTML = formatDate(date);
   temperatureElement.innerHTML = Math.round(temperature);
   descriptionElement.innerHTML = response.data.condition.description;
   cityElement.innerHTML = response.data.city;
@@ -25,25 +25,25 @@ function searchCity(city) {
 }
 
 function formatDate(date) {
-  let day = days[date.getDay()];
-  let minute = date.getMinutes();
-  let hours = day.getHours();
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
   let days = [
     "Sunday",
     "Monday",
     "Tuesday",
-    "Wednsday",
+    "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
   ];
-  return `${days} ${hours}:${minute}`;
+  let day = days[date.getDay()];
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-}
 
+  return `${day} ${hours}:${minutes}`;
+}
 function handleSearch(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
