@@ -100,9 +100,10 @@ strong {
 
 .temperatureContainer {
   display: flex;
-  margin-right: -290px;
+  margin-right: -30px;
   margin-top: -100px;
   justify-content: right;
+  padding: 20px;
 }
 
 .temperatureIcon {
@@ -120,6 +121,7 @@ strong {
 .forecast-icon {
   text-align: center;
   margin-bottom: 10px;
+  font-size: 35px;
 }
 
 .forecast-temp {
@@ -134,6 +136,10 @@ strong {
   margin-top: 10px;
 }
 
-.forecast-days {
+.weather-forecast {
   display: flex;
+}
+
+.weather-forecast-temperature {
+  padding: 0 10px;
 }
