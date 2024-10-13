@@ -19,6 +19,14 @@ function updateTemperature(response) {
   currentDayElement.innerHTML = response.data.time;
 }
 
+function getForecastData(city) {
+  let apiKey = "b33862d908c4feta1cbo2fc015504418";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {}
+
 function searchCity(city) {
   let apiKey = "b33862d908c4feta1cbo2fc015504418";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
@@ -56,3 +64,4 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearch);
 
 searchCity("Miami");
+getForecastData("Paris");
